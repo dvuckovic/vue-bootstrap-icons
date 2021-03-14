@@ -7,6 +7,8 @@
 
 A Vue.js component for rendering [Bootstrap Icons](https://icons.getbootstrap.com/) via the SVG sprite method.
 
+[Changelog]
+
 ## Install
 
 ```sh
@@ -159,3 +161,5 @@ npm run serve
 ```sh
 npm run build
 ```
+
+[Changelog]: ./CHANGELOG.md
