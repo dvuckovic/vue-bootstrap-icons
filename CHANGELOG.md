@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added this changelog file.
 - Added medium value for the size prop (`md`).
 
+### Changed
+
+- Bumped up dev dependencies.
+
 ### Removed
 
 - Removed superfluous styles (`line-height`).
