@@ -1640,6 +1640,7 @@ export default {
             ],
             sizes: [
                 'sm',
+                'md',
                 'lg',
                 '2x',
                 '3x',

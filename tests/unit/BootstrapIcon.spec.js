@@ -40,7 +40,7 @@ describe('BootstrapIcon', () => {
     });
 
     it('supports the size prop', async () => {
-        const size = 'lg';
+        const size = 'md';
 
         wrapper.setProps({
             size,
@@ -48,7 +48,7 @@ describe('BootstrapIcon', () => {
 
         await wrapper.vm.$nextTick(() => {});
 
-        expect(wrapper.find('.bi').classes()).toContain('bi--size-lg');
+        expect(wrapper.find('.bi').classes()).toContain('bi--size-md');
     });
 
     it('supports the flip props', async () => {

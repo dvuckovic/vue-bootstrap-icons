@@ -39,6 +39,7 @@ export default {
             type: String,
             validator: value => [
                 'sm',
+                'md',
                 'lg',
                 '2x',
                 '3x',
@@ -130,7 +131,6 @@ export default {
     width: 1em;
     height: 1em;
     font-size: 1em;
-    line-height: 1em;
     margin-bottom: 0.125em;
     vertical-align: middle;
 
@@ -167,38 +167,31 @@ export default {
     &--size {
         &-sm {
             font-size: 0.75em;
-            line-height: 0.75em;
+        }
+
+        &-md {
+            font-size: 1.25rem;
         }
 
         &-lg {
             font-size: 1.33333333rem;
-            line-height: 1.73333333rem;
         }
 
         &-2x {
             font-size: 2rem;
-            line-height: 2.13333333rem;
         }
 
         &-3x {
             font-size: 3rem;
-            line-height: 3.2rem;
         }
 
         &-4x {
             font-size: 4rem;
-            line-height: 4.26666666rem;
         }
 
         &-5x {
             font-size: 5rem;
-            line-height: 5.33333333rem;
         }
-    }
-
-    &--fixed-width {
-        width: 1.28571429rem;
-        text-align: center;
     }
 
     &--animation {

@@ -1,12 +1,11 @@
 # vue-bootstrap-icons
 
 [![Build Status](https://img.shields.io/github/workflow/status/dvuckovic/vue-bootstrap-icons/Test)](https://github.com/dvuckovic/vue-bootstrap-icons/actions/workflows/checks.yml)
+[![Vue.js](https://img.shields.io/github/package-json/dependency-version/dvuckovic/vue-bootstrap-icons/dev/vue)](https://vuejs.org/)
 [![Bootstrap Icons](https://img.shields.io/github/package-json/dependency-version/dvuckovic/vue-bootstrap-icons/dev/bootstrap-icons)](https://icons.getbootstrap.com/)
 [![License](https://img.shields.io/github/package-json/license/dvuckovic/vue-bootstrap-icons?color=white)](http://www.wtfpl.net/)
 
 A Vue.js component for rendering [Bootstrap Icons](https://icons.getbootstrap.com/) via the SVG sprite method.
-
-> Compatible with Vue.js 2.x
 
 ## Install
 
@@ -92,6 +91,7 @@ In addition to this, the component can inherit the current CSS color style, simp
 The size of the icon, supports following values:
 
 * `sm`
+* `md`
 * `lg`
 * `2x`
 * `3x`
@@ -103,7 +103,6 @@ In addition to this, the component can inherit the current CSS font size style, 
 ```css
 .bi {
     font-size: 2.5rem;
-    line-height: 2.625rem;
 }
 ```
 
