@@ -62,7 +62,7 @@ const external = [
     // list external dependencies, exactly the way it is written in the import statement.
     // eg. 'jquery'
     // 'vue',
-    '../node_modules/bootstrap-icons/bootstrap-icons.svg',
+    'bootstrap-icons/bootstrap-icons.svg',
 ];
 
 // UMD/IIFE shared settings: output.globals
@@ -71,7 +71,7 @@ const globals = {
     // Provide global variable names to replace your external imports
     // eg. jquery: '$'
     // vue: 'Vue',
-    [`${path.resolve(projectRoot, 'node_modules')}/bootstrap-icons/bootstrap-icons.svg`]: 'BootstrapIcons',
+    'bootstrap-icons/bootstrap-icons.svg': 'BootstrapIcons',
 };
 
 // Customize configs for individual targets

@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import BootstrapIcons from '../node_modules/bootstrap-icons/bootstrap-icons.svg';
+import BootstrapIcons from 'bootstrap-icons/bootstrap-icons.svg';
 
 export default {
     name: 'BootstrapIcon',
