@@ -42,6 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release based on Bootstrap Icons v1.4.0.
 
+[1.0.3]: https://github.com/dvuckovic/vue-bootstrap-icons/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/dvuckovic/vue-bootstrap-icons/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/dvuckovic/vue-bootstrap-icons/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/dvuckovic/vue-bootstrap-icons/releases/tag/v1.0.0
