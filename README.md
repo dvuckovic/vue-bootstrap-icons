@@ -2,12 +2,12 @@
 
 [![Build Status](https://img.shields.io/github/workflow/status/dvuckovic/vue-bootstrap-icons/Test)](https://github.com/dvuckovic/vue-bootstrap-icons/actions/workflows/checks.yml)
 [![Vue.js](https://img.shields.io/github/package-json/dependency-version/dvuckovic/vue-bootstrap-icons/dev/vue)](https://vuejs.org/)
-[![Bootstrap Icons](https://img.shields.io/github/package-json/dependency-version/dvuckovic/vue-bootstrap-icons/dev/bootstrap-icons)](https://icons.getbootstrap.com/)
+[![Bootstrap Icons](https://img.shields.io/github/package-json/dependency-version/dvuckovic/vue-bootstrap-icons/bootstrap-icons)](https://icons.getbootstrap.com/)
 [![License](https://img.shields.io/github/package-json/license/dvuckovic/vue-bootstrap-icons?color=white)](http://www.wtfpl.net/)
 
 A Vue.js component for rendering [Bootstrap Icons](https://icons.getbootstrap.com/) via the SVG sprite method.
 
-[Changelog]
+[Demo] [Changelog]
 
 ## Install
 
@@ -17,22 +17,23 @@ npm install --save @dvuckovic/vue-bootstrap-icons
 
 ## Usage
 
-Dynamic imports are recommended for performance reasons, as this will avoid bundling of the complete icon library (~700KB as of 2021) in the main application chunk.
-
 Global component registration:
 
 ```js
 import Vue from 'vue';
+import BootstrapIcon from '@dvuckovic/vue-bootstrap-icons';
 
-Vue.component('BootstrapIcon', () => import('@dvuckovic/vue-bootstrap-icons'));
+Vue.component('BootstrapIcon', BootstrapIcon);
 ```
 
 Local component registration:
 
 ```js
+import BootstrapIcon from '@dvuckovic/vue-bootstrap-icons';
+
 export default {
     components: {
-        BootstrapIcon: () => import('@dvuckovic/vue-bootstrap-icons'),
+        BootstrapIcon,
     },
 };
 ```
@@ -48,10 +49,10 @@ Usage in template:
 
 ### SSR
 
-For SSR applications, make sure to import from the following path:
+For SSR environment, make sure to import from the following path:
 
 ```js
-import('@dvuckovic/vue-bootstrap-icons/dist/bootstrap-icon.ssr')
+import BootstrapIconSsr from '@dvuckovic/vue-bootstrap-icons/dist/bootstrap-icon.ssr';
 ```
 
 ### UMD
@@ -162,4 +163,5 @@ npm run serve
 npm run build
 ```
 
+[Demo]: https://dvuckovic.com/2021/03/12/vue-bootstrap-icons/
 [Changelog]: ./CHANGELOG.md
