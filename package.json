@@ -22,6 +22,9 @@
     "dist/*",
     "src/**/*.vue"
   ],
+  "dependencies": {
+    "bootstrap-icons": "^1.4.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -37,7 +40,6 @@
     "@vue/cli-service": "^4.5.10",
     "@vue/test-utils": "^1.0.3",
     "bootstrap": "^5.0.0-beta2",
-    "bootstrap-icons": "^1.4.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.2.1",

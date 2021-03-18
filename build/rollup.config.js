@@ -61,7 +61,8 @@ const baseConfig = {
 const external = [
     // list external dependencies, exactly the way it is written in the import statement.
     // eg. 'jquery'
-    'vue',
+    // 'vue',
+    '../node_modules/bootstrap-icons/bootstrap-icons.svg',
 ];
 
 // UMD/IIFE shared settings: output.globals
@@ -69,7 +70,8 @@ const external = [
 const globals = {
     // Provide global variable names to replace your external imports
     // eg. jquery: '$'
-    vue: 'Vue',
+    // vue: 'Vue',
+    [`${path.resolve(projectRoot, 'node_modules')}/bootstrap-icons/bootstrap-icons.svg`]: 'BootstrapIcons',
 };
 
 // Customize configs for individual targets
@@ -100,9 +102,9 @@ if (!argv.format || argv.format === 'es') {
                     ],
                 ],
             }),
-            commonjs(),
             resolve(),
             image(),
+            commonjs(),
         ],
     };
     buildFormats.push(esConfig);
@@ -132,9 +134,9 @@ if (!argv.format || argv.format === 'cjs') {
             }),
             ...baseConfig.plugins.postVue,
             babel(baseConfig.plugins.babel),
-            commonjs(),
             resolve(),
             image(),
+            commonjs(),
         ],
     };
     buildFormats.push(umdConfig);
@@ -158,9 +160,9 @@ if (!argv.format || argv.format === 'iife') {
             vue(baseConfig.plugins.vue),
             ...baseConfig.plugins.postVue,
             babel(baseConfig.plugins.babel),
-            commonjs(),
             resolve(),
             image(),
+            commonjs(),
             terser({
                 output: {
                     ecma: 5,
