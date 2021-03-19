@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added light value for the variants prop (`light`).
 
+### Changed
+
+- Bumped up dev dependencies.
+
 ### Fixed
 
 - Component registration instructions in the README.
