@@ -32,6 +32,7 @@ export default {
                 'primary',
                 'secondary',
                 'dark',
+                'light',
             ].indexOf(value) !== -1,
         },
 
@@ -161,6 +162,10 @@ export default {
 
         &-dark {
             color: var(--bs-dark);
+        }
+
+        &-light {
+            color: var(--bs-light);
         }
     }
 

@@ -80,6 +80,7 @@ The color of the icon, supports standard [Bootstrap variants](https://getbootstr
 * `primary`
 * `secondary`
 * `dark`
+* `light`
 
 In addition to this, the component can inherit the current CSS color style, simply set it for the root element:
 

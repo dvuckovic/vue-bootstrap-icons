@@ -1637,6 +1637,7 @@ export default {
                 'primary',
                 'secondary',
                 'dark',
+                'light',
             ],
             sizes: [
                 'sm',
