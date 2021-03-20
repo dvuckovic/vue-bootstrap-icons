@@ -71,5 +71,6 @@
     "type": "git",
     "url": "git+https://github.com/dvuckovic/vue-bootstrap-icons.git"
   },
+  "homepage": "https://dvuckovic.com/2021/03/12/vue-bootstrap-icons/",
   "sideEffects": false
 }

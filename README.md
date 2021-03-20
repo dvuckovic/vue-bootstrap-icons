@@ -7,6 +7,8 @@
 
 A Vue.js component for rendering [Bootstrap Icons](https://icons.getbootstrap.com/) via the SVG sprite method.
 
+For Vue 3 version of this component, check out [@dvuckovic/vue3-bootstrap-icons](https://www.npmjs.com/package/@dvuckovic/vue3-bootstrap-icons).
+
 [Demo] [Changelog]
 
 ## Install
