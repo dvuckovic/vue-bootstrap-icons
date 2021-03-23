@@ -65,6 +65,7 @@
     "serve": "^11.3.2",
     "start-server-and-test": "^1.12.1",
     "vue": "^2.6.12",
+    "vue-server-renderer": "^2.6.12",
     "vue-template-compiler": "^2.6.12"
   },
   "peerDependencies": {
