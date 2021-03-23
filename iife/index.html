@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script>var BootstrapIcons = '../node_modules/bootstrap-icons/bootstrap-icons.svg';</script>
+    <script src="../dist/bootstrap-icon.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <div id="app">
+        <bootstrap-icon
+            v-bind:icon="icon"
+            v-bind:variant="variant"
+            v-bind:size="size"
+            v-bind:flip-h="flipH"
+            v-bind:flip-v="flipV"
+            v-bind:rotate="rotate"
+            v-bind:animation="animation">
+        </bootstrap-icon>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+
+            components: {
+                BootstrapIcon,
+            },
+
+            data () {
+                return {
+                    icon: undefined,
+                    variant: 'success',
+                    size: 'sm',
+                    flipH: true,
+                    flipV: false,
+                    rotate: 0,
+                    animation: 'throb',
+                };
+            },
+        });
+    </script>
+</body>
+</html>
